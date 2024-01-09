@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  /* background-color: red; */
+}
+
+.h1 {
+  background-color: #555454c4;
+}
+
+.container {
+  margin: auto;
+  position: relative;
+}
+
+.container .cvs2 {
+  position: absolute;
+  top: 85px;
+  left: 0;
+  /* background-color: rgba(255, 255, 255, 0.722); */
+}
+
+.slider {
+  position: relative;
+  height: 42px;
+  width: 250px;
+  line-height: 40px;
+  background-color: #f7f9fa;
+  padding-left: 40px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 2px;
+}
+
+.slider .dot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  transition: background-color 0.4s linear;
+  background-color: #ffffffe3;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slider .progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0px;
+  border: 1px solid #52ccba;
+  border-right: unset;
+  background-color: #d2f4ef;
+}
+
+.slider .progress.error {
+  border: 1px solid #e83c4b;
+  border-right: unset;
+  background-color: #ed99ad;
+}
+
+.result {
+  width: 250px;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 5px;
+}
